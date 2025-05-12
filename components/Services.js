@@ -1,4 +1,4 @@
-import { FiFileText, FiFileplus, FiLock } from 'react-icons/fi';
+import { FiFileText, FiFile, FiLock } from 'react-icons/fi';
 
 const Services = () => {
   const services = [
@@ -14,7 +14,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FiFileplus className="w-12 h-12 text-primary" />,
+      icon: <FiFile className="w-12 h-12 text-primary" />,
       title: 'SIUP/NIB',
       description: 'Surat Izin Usaha Perdagangan dan Nomor Induk Berusaha adalah dokumen resmi yang harus dimiliki untuk menjalankan usaha secara legal di Indonesia.',
       features: [

@@ -17,13 +17,14 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="relative">
-              <div className="w-full h-[400px] relative rounded-lg overflow-hidden shadow-lg bg-gray-200">
-                {/* Ini bisa diganti dengan Image jika sudah ada gambar */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <span className="font-serif text-xl text-primary font-bold">
-                    JasaDokumen
-                  </span>
-                </div>
+              <div className="w-full h-[400px] relative rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/logo.png"
+                  alt="JasaDokumen Logo"
+                  layout="fill"
+                  objectFit="contain"
+                  className="p-8"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-full flex items-center justify-center text-center p-4">
                 <span className="text-white font-bold">

@@ -1,16 +1,23 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="py-6 border-b border-gray-200 bg-white sticky top-0 z-50">
+    <header className="py-4 border-b border-gray-200 bg-white sticky top-0 z-50">
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
-          <Link href="/" className="font-serif text-2xl font-bold text-primary">
-            JasaDokumen
+          <Link href="/" className="relative w-40 h-12">
+            <Image
+              src="/logo.png"
+              alt="JasaDokumen"
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
           </Link>
         </div>
 
@@ -22,7 +29,12 @@ const Header = () => {
           <Link href="#tentang" className="font-medium text-gray-700 hover:text-primary transition-colors">
             Tentang Kami
           </Link>
-          <Link href="#kontak" className="btn btn-primary">
+          <Link 
+            href="https://wa.me/6285752083533" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn bg-[#25D366] text-white hover:bg-opacity-90"
+          >
             Hubungi Kami
           </Link>
         </nav>
@@ -59,8 +71,10 @@ const Header = () => {
               Tentang Kami
             </Link>
             <Link
-              href="#kontak"
-              className="btn btn-primary w-full text-center"
+              href="https://wa.me/6285752083533"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-[#25D366] text-white hover:bg-opacity-90 w-full text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               Hubungi Kami
