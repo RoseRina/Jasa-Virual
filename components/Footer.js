@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="font-serif text-xl font-bold mb-4">JasaDokumen</h3>
+            <h3 className="font-serif text-xl font-bold mb-4">Jasa Dokumen</h3>
             <p className="text-neutral mb-4">
               Kami menyediakan layanan pembuatan dokumen bisnis dengan proses
               yang cepat, mudah, dan terpercaya. Tim kami siap membantu Anda
@@ -55,7 +55,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-light mt-8 pt-8 text-center text-neutral">
           <p>
-            &copy; {currentYear} JasaDokumen. Hak Cipta Dilindungi.
+            &copy; {currentYear} Jasa Dokumen. Hak Cipta Dilindungi.
           </p>
         </div>
       </div>
