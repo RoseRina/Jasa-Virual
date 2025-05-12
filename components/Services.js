@@ -10,7 +10,7 @@ const Services = () => {
         'Konsultasi kebutuhan NPWP Anda',
         'Persiapan semua dokumen yang diperlukan',
         'Pendaftaran NPWP secara resmi',
-        'Penyerahan kartu NPWP',
+        'Kartu dikirim dalam bentuk PDF',
       ]
     },
     {

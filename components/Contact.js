@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiPhone, FiMapPin, FiSend, FiMessageCircle } from 'react-icons/fi';
+import { FiPhone, FiMessageCircle } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
@@ -17,7 +17,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Format pesan WhatsApp
     const message = `Halo, saya ${formData.name} ingin konsultasi tentang ${formData.service}.\n\n${formData.message}`;
     const whatsappUrl = `https://wa.me/6285752083533?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -48,21 +47,8 @@ const Contact = () => {
                   <FiPhone className="w-6 h-6 text-neutral" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg">Telepon/WhatsApp</h4>
-                  <p className="text-neutral">+62 857-5208-3533</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="bg-primary-light p-3 rounded-full">
-                  <FiMapPin className="w-6 h-6 text-neutral" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">Alamat</h4>
-                  <p className="text-neutral">
-                    Jl. Dokumen Bisnis No.123, <br />
-                    Jakarta Selatan, Indonesia
-                  </p>
+                  <h4 className="font-semibold text-lg">WhatsApp</h4>
+                  <p className="text-neutral">0857-5208-3533</p>
                 </div>
               </div>
             </div>

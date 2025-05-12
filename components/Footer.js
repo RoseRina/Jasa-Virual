@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiPhone } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,18 +46,8 @@ const Footer = () => {
             <h3 className="font-serif text-xl font-bold mb-4">Kontak</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
-                <FiMail className="text-neutral-dark" />
-                <span className="text-neutral">info@jasadokumen.com</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <FiPhone className="text-neutral-dark" />
-                <span className="text-neutral">+62 812 3456 7890</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <FiMapPin className="text-neutral-dark mt-1" />
-                <span className="text-neutral">
-                  Jl. Dokumen Bisnis No.123, Jakarta Selatan, Indonesia
-                </span>
+                <FaWhatsapp className="text-neutral-dark" />
+                <span className="text-neutral">0857-5208-3533</span>
               </li>
             </ul>
           </div>
