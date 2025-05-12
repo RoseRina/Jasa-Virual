@@ -40,7 +40,7 @@ const About = () => {
             </h2>
             
             <p className="text-gray-700 mb-4">
-              JasaDokumen adalah penyedia layanan pembuatan dokumen bisnis yang terpercaya. 
+              Jasa Dokumen adalah penyedia layanan pembuatan dokumen bisnis yang terpercaya. 
               Kami membantu pelaku usaha dan individu dalam mengurus dokumen-dokumen penting 
               seperti NPWP, SIUP/NIB, dan Efin DJP dengan cara yang mudah dan efisien.
             </p>
